@@ -4,6 +4,7 @@
   "description": "Nuestro primer proyecto de Nodejs",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "Miguel Marquez",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/mame301186/portal-pagos#readme"
+  "homepage": "https://bitbucket.org/mame301186/portal-pagos#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
