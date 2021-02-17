@@ -15,3 +15,16 @@ footer {
 img {
     padding: 60px 10px 40px 10px;	
 }
+
+.footer-icon {
+	padding-right: 10px;
+}
+
+.body-icon {
+	padding-right: 15px;
+}
+
+.padding-titulo {
+padding-bottom: 30px;
+padding-top: 50px;
+}
