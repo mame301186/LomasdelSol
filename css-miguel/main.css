@@ -28,3 +28,11 @@ img {
 padding-bottom: 30px;
 padding-top: 50px;
 }
+
+.padd_btn_contact {
+padding-bottom: 20px;
+}
+
+form {
+	padding-bottom: 15px;
+}

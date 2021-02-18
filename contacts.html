@@ -28,23 +28,104 @@
   				<li class="nav-item"><a class="nav-link" href="./proyect.html">Proyectos</a></li>
           <li class="nav-item"><a class="nav-link" href="./economics-index.html">Indicadores Económicos</a></li>
           <li class="nav-item"><a class="nav-link" href="./term-and-conditions.html">Términos y condiciones</a></li>
-          <li class="nav-item active"><a class="nav-link" href="#">Contacto</a></li>  	</nav>
+          <li class="nav-item active"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>  	
+    </nav>
   	<div class="jumbotron">
       <figure class="text-center">
   			<h1>CONJUNTO RESIDENCIAL LOMAS DEL SOL</h1>
       </figure>   
   	</div>
-  	  <div class="container">
-        <nav aria-label="breadcrumb">
+  	<div class="container">
+      <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">Contacto</li>
         </ol>
-        </nav>
-        <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales felis felis, tincidunt viverra ipsum accumsan quis. Nam molestie vehicula ex, laoreet laoreet lorem pulvinar non. Mauris posuere nec risus sit amet tincidunt. In dictum tincidunt vehicula. Pellentesque luctus mauris et fringilla volutpat. Suspendisse accumsan, augue vitae aliquet fringilla, elit ipsum cursus purus, vel mattis augue nibh ac lectus. Donec vehicula ut risus a mattis. Quisque scelerisque, erat sit amet sollicitudin laoreet, velit urna sollicitudin urna, eu posuere sapien est non quam. Duis finibus nisl et libero pharetra, quis porttitor tortor aliquam. Donec vestibulum blandit dolor, a imperdiet mi pulvinar sed. Nunc vehicula libero vitae velit suscipit maximus. Sed sit amet magna convallis sem sollicitudin volutpat at quis arcu. In aliquam eleifend nisi, non vehicula est pellentesque sed. Vestibulum hendrerit neque eu arcu commodo, id dictum lorem pulvinar.
-        </span>
-      </div>  
+      </nav>
+      <h1>Formula tu comentario</h1>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese sus nombres">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="apellido">Apellido completo</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingrese sus apellidos">
+          </div>
+          <div class="form-group col-sm-4">
+            <label for="cod_pais">Código de país</label>
+            <input type="tel" class="form-control" id="cod_pais" placeholder="Ejemplo: Venezuela (58)">
+          </div>
+          <div class="form-group col-sm-4">
+            <label for="cod_oper">Código de operadora</label>
+            <input type="tel" class="form-control" id="cod_oper" placeholder="Ejemplo: Movistar (424)">
+          </div>
+          <div class="form-group col-sm-4">
+            <label for="telefono">Número telefónico</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="No utilice separadores (7 digitos)">
+          </div>
+          <div class="form-group col-sm-3">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="example@gmail.com">
+          </div>
+          <div class="form-group col-sm-3">
+            <label for="tipo_visitante">Condición del visitante</label>
+            <select class="form-control" id="tipo_visitante">
+              <option>Propietario</option>
+              <option>Inquilino</option>
+              <option>Persona externa</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-3">
+            <label for="torre">Torre</label>  
+            <select class="form-control" id="torre">
+              <option>Torre I</option>
+              <option>Torre II</option>
+              <option>Torre III</option>
+              <option>Torre IV</option>
+              <option>Torre V</option>
+              <option>Torre VI</option>
+              <option>No aplica</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-3">
+            <label for="Apto">Apartamento</label>  
+            <select class="form-control" id="apto">
+              <option>PB-A</option>
+              <option>PB-B</option>
+              <option>PB-C</option>
+              <option>PB-D</option>
+              <option>Piso 1-A</option>
+              <option>Piso 1-B</option>
+              <option>Piso 1-C</option>
+              <option>Piso 1-D</option>
+              <option>Piso 2-A</option>
+              <option>Piso 2-B</option>
+              <option>Piso 2-C</option>
+              <option>Piso 2-D</option>
+              <option>Piso 3-A</option>
+              <option>Piso 3-B</option>
+              <option>Piso 3-C</option>
+              <option>Piso 3-D</option>
+              <option>No aplica</option>
+            </select>
+          </div>
+        </div>
+          <div class="form-group">
+            <label for="comentario">Comentario</label> 
+            <textarea id="comentario" class="form-control" rows="5" placeholder="Escribe tu comentario aquí"></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check-box">
+            <label for="check-box" class="form-check-label padd_btn_contact">Deseo una respuesta a mi comentario</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar formulario</button>
+        </div>
+      </form>
+    </div>  
     <footer>
     	<div class="row">
     		<div class="col d-flex flex-column">
