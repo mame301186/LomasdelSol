@@ -36,3 +36,19 @@ padding-bottom: 20px;
 form {
 	padding-bottom: 15px;
 }
+
+.body-icon-estadist {
+	padding-left: 15px;
+}
+
+.card-admin { 
+	padding:0px 0px 5px 0px;
+	margin-top:0px;
+	border-radius:0px
+}
+
+.btn-config {
+	width:100%;
+	border-radius:20px
+
+}
