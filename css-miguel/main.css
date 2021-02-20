@@ -16,6 +16,7 @@ img {
     padding: 60px 10px 40px 10px;	
 }
 
+
 .footer-icon {
 	padding-right: 10px;
 }
@@ -25,12 +26,12 @@ img {
 }
 
 .padding-titulo {
-padding-bottom: 30px;
-padding-top: 50px;
+    padding-bottom: 30px;
+    padding-top: 50px;
 }
 
 .padd_btn_contact {
-padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 form {
@@ -42,13 +43,15 @@ form {
 }
 
 .card-admin { 
-	padding:0px 0px 5px 0px;
-	margin-top:0px;
-	border-radius:0px
+	border-radius:5px
 }
 
 .btn-config {
-	width:100%;
-	border-radius:20px
+	width:70%;
+	border-radius:20px;
 
+}
+
+.card-btn {
+	padding-bottom: 10px;
 }
