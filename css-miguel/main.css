@@ -1,7 +1,7 @@
 .jumbotron {
     background-color: orange;
     color: black; 
-    margin-top:5px;
+    height: 300px
 }
 
 footer {
@@ -11,11 +11,6 @@ footer {
 	margin-bottom: 0px;
 	margin-top:10px;
 }
-
-img {
-    padding: 20px 10px 40px 10px;	
-}
-
 
 .footer-icon {
 	padding-right: 10px;

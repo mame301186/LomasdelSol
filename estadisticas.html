@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<link rel="shortcut icon" href="favicon-lomas.ico" />
+  	<link rel="shortcut icon" href="imagenes/icono_nuevo_lomas.png">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -47,115 +47,351 @@
       </nav>
       <div class="table-responsive">
         <h4 class="text-center font-weight-bold">CARTELERA DE MOROSIDAD</h4>
-        <table class="table table-striped">
-          <thead class="thead-dark text-center">
-            <th>Apartamento<span class="oi oi-home body-icon-estadist"></span></th>
-            <th>Condominio<span class="oi oi-dollar body-icon-estadist"></span></th>
-            <th>Cisternas de agua<span class="oi oi-dollar body-icon-estadist"></th>
-            <th>Cuotas especiales<span class="oi oi-dollar body-icon-estadist"></th>
-          </thead>
-          <tbody class="text-center">
-            <tr>
-              <td>T1-PB-A</td>
-              <td>10$</td>
-              <td>0$</td>
-              <td>5$</td>
-            </tr>                    
-            <tr>
-              <td>T1-PB-B</td>
-              <td>20$</td>
-              <td>5$</td>
-              <td>15$</td>
-            </tr>
-            <tr>
-              <td>T1-PB-C</td>
-              <td>10$</td>
-              <td>0$</td>
-              <td>0$</td>
-            </tr>
-            <tr>
-              <td>T1-PB-D</td>
-              <td>0$</td>
-              <td>0$</td>
-              <td>0$</td>
-            </tr>
-            <tr>
-              <td>T1-P1-A</td>
-              <td>0$</td>
-              <td>50$</td>
-              <td>100$</td>
-            </tr>
-            <tr>
-              <td>T1-P1-B</td>
-              <td>50$</td>
-              <td>0$</td>
-              <td>0$</td>
-            </tr>
-            <tr>
-              <td>T1-P1-C</td>
-              <td>10$</td>
-              <td>15$</td>
-              <td>10$</td>
-            </tr>
-            <tr>
-              <td>T1-P1-D</td>
-              <td>20$</td>
-              <td>0$</td>
-              <td>0$</td>
-            </tr>
-            <tr>
-              <td>T1-P2-A</td>
-              <td>0$</td>
-              <td>0$</td>
-              <td>0$</td>
-            </tr>
-            <tr>
-              <td>T1-P2-B</td>
-              <td>0$</td>
-              <td>0$</td>
-              <td>0$</td>
-            </tr>
-            <tr>
-              <td>T1-P2-C</td>
-              <td>0$</td>
-              <td>0$</td>
-              <td>0$</td>
-            </tr>
-            <tr>
-              <td>T1-P2-D</td>
-              <td>0$</td>
-              <td>10$</td>
-              <td>5$</td>
-            </tr>
-            <tr>
-              <td>T1-P3-A</td>
-              <td>0$</td>
-              <td>0$</td>
-              <td>0$</td>
-            </tr>
-            <tr>
-              <td>T1-P3-B</td>
-              <td>20$</td>
-              <td>0$</td>
-              <td>5$</td>
-            </tr>
-            <tr>
-              <td>T1-P3-C</td>
-              <td>0$</td>
-              <td>0$</td>
-              <td>0$</td>
-            </tr>
-            <tr>
-              <td>T1-P3-D</td>
-              <td>0$</td>
-              <td>0$</td>
-              <td>10$</td>
-            </tr>
-          </tbody>
-        </table>
+        <ul class="nav nav-pills" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="Admin_Torre-I-II-tab" data-toggle="pill" role="tab" href="#Admin_Torre-I-II" aria-controls="Admin_Torre-I-II" aria-selected="true">Administración Torre I y II</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Admin_Torre-III-IV-tab" data-toggle="pill" role="tab" href="#Admin_Torre-III-IV" aria-controls="Admin_Torre-III-IV" aria-selected="false">Administración Torre III y IV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Admin_Torre-V-VI-tab" data-toggle="pill" role="tab" href="#Admin_Torre-V-VI" aria-controls="Admin_Torre-V-VI" aria-selected="false">Administración Torre V y VI</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="Admin_Torre-I-II" role="tabpanel" aria-labelledby="Admin_Torre-I-II-tab">
+            <div class="table responsive">
+              <table class="table table-striped">
+                <thead class="thead-dark text-center">
+                  <th>Apartamento<span class="oi oi-home body-icon-estadist"></span></th>
+                  <th>Condominio<span class="oi oi-dollar body-icon-estadist"></span></th>
+                  <th>Cisternas de agua<span class="oi oi-dollar body-icon-estadist"></span></th>
+                  <th>Cuotas especiales<span class="oi oi-dollar body-icon-estadist"></span></th>
+                </thead>
+                <tbody class="text-center">
+                  <tr>
+                    <td>T1-PB-A</td>
+                    <td>10$</td>
+                    <td>0$</td>
+                    <td>5$</td>
+                  </tr>                    
+                  <tr>
+                    <td>T1-PB-B</td>
+                    <td>20$</td>
+                    <td>5$</td>
+                    <td>15$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-PB-C</td>
+                    <td>10$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-PB-D</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P1-A</td>
+                    <td>0$</td>
+                    <td>50$</td>
+                    <td>100$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P1-B</td>
+                    <td>50$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P1-C</td>
+                    <td>10$</td>
+                    <td>15$</td>
+                    <td>10$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P1-D</td>
+                    <td>20$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P2-A</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P2-B</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P2-C</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P2-D</td>
+                    <td>0$</td>
+                    <td>10$</td>
+                    <td>5$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P3-A</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P3-B</td>
+                    <td>20$</td>
+                    <td>0$</td>
+                    <td>5$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P3-C</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P3-D</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>10$</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="Admin_Torre-III-IV" role="tabpanel" aria-labelledby="Admin_Torre-III-IV-tab">
+            <div class="table responsive">
+              <table class="table table-striped">
+                <thead class="thead-dark text-center">
+                  <th>Apartamento<span class="oi oi-home body-icon-estadist"></span></th>
+                  <th>Condominio<span class="oi oi-dollar body-icon-estadist"></span></th>
+                  <th>Cisternas de agua<span class="oi oi-dollar body-icon-estadist"></span></th>
+                  <th>Cuotas especiales<span class="oi oi-dollar body-icon-estadist"></span></th>
+                </thead>
+                <tbody class="text-center">
+                  <tr>
+                    <td>T3-PB-A</td>
+                    <td>10$</td>
+                    <td>0$</td>
+                    <td>5$</td>
+                  </tr>                    
+                  <tr>
+                    <td>T1-PB-B</td>
+                    <td>20$</td>
+                    <td>5$</td>
+                    <td>15$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-PB-C</td>
+                    <td>10$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-PB-D</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P1-A</td>
+                    <td>0$</td>
+                    <td>50$</td>
+                    <td>100$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P1-B</td>
+                    <td>50$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P1-C</td>
+                    <td>10$</td>
+                    <td>15$</td>
+                    <td>10$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P1-D</td>
+                    <td>20$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P2-A</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P2-B</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P2-C</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P2-D</td>
+                    <td>0$</td>
+                    <td>10$</td>
+                    <td>5$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P3-A</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P3-B</td>
+                    <td>20$</td>
+                    <td>0$</td>
+                    <td>5$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P3-C</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P3-D</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>10$</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div> 
+          <div class="tab-pane fade" id="Admin_Torre-V-VI" role="tabpanel" aria-labelledby="Admin_Torre-V-VI-tab">
+            <div class="table responsive">
+              <table class="table table-striped">
+                <thead class="thead-dark text-center">
+                  <th>Apartamento<span class="oi oi-home body-icon-estadist"></span></th>
+                  <th>Condominio<span class="oi oi-dollar body-icon-estadist"></span></th>
+                  <th>Cisternas de agua<span class="oi oi-dollar body-icon-estadist"></span></th>
+                  <th>Cuotas especiales<span class="oi oi-dollar body-icon-estadist"></span></th>
+                </thead>
+                <tbody class="text-center">
+                  <tr>
+                    <td>T5-PB-A</td>
+                    <td>10$</td>
+                    <td>0$</td>
+                    <td>5$</td>
+                  </tr>                    
+                  <tr>
+                    <td>T1-PB-B</td>
+                    <td>20$</td>
+                    <td>5$</td>
+                    <td>15$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-PB-C</td>
+                    <td>10$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-PB-D</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P1-A</td>
+                    <td>0$</td>
+                    <td>50$</td>
+                    <td>100$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P1-B</td>
+                    <td>50$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P1-C</td>
+                    <td>10$</td>
+                    <td>15$</td>
+                    <td>10$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P1-D</td>
+                    <td>20$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P2-A</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P2-B</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P2-C</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P2-D</td>
+                    <td>0$</td>
+                    <td>10$</td>
+                    <td>5$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P3-A</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P3-B</td>
+                    <td>20$</td>
+                    <td>0$</td>
+                    <td>5$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P3-C</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                  </tr>
+                  <tr>
+                    <td>T1-P3-D</td>
+                    <td>0$</td>
+                    <td>0$</td>
+                    <td>10$</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div> 
+        </div>
       </div>
     </div>
-
     <footer>
       <div class="row">
         <div class="col d-flex flex-column">
@@ -176,8 +412,10 @@
           </addres>
         </div>
         <div class="col d-flex flex-column align-items-center">
-          <h4>Conoce nuestro logo</h4>
-          <img src="fanicon-lomas.jpg" alt="Condominio Lomas del Sol">
+          <h4>Reconócenos en la web</h4>
+          <img src="imagenes/icono_nuevo_lomas.png" class="img-fluid" alt="Condominio Lomas del Sol" width="100">
+          <p class="h4">Nosotros</p>
+          <p class="h4">Términos y condiciones</p>
         </div>  
       </div>      
     </footer>  
@@ -188,6 +426,7 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
     <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js">	
     </script>
