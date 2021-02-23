@@ -49,8 +49,9 @@
           <li class="breadcrumb-item active" aria-current="page">Estadísticas</li>
         </ol>
       </nav>
+
       <div class="table-responsive">
-        <h4 class="text-center font-weight-bold">CARTELERA DE MOROSIDAD</h4>
+        <h4 class="text-center font-weight-bold">CARTELERA DE MOROSIDAD Y FORMAS DE PAGO</h4>
         <ul class="nav nav-pills" id="myTab" role="tablist">
           <li class="nav-item">
             <a class="nav-link active" id="Admin_Torre-I-II-tab" data-toggle="pill" role="tab" href="#Admin_Torre-I-II" aria-controls="Admin_Torre-I-II" aria-selected="true">Administración Torre I y II</a>
@@ -60,6 +61,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" id="Admin_Torre-V-VI-tab" data-toggle="pill" role="tab" href="#Admin_Torre-V-VI" aria-controls="Admin_Torre-V-VI" aria-selected="false">Administración Torre V y VI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Formas_de_Pago-tab" data-toggle="pill" role="tab" href="#Formas_de_Pago" aria-controls="Formas_de_Pago" aria-selected="false">Formas de Pago</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -172,7 +176,7 @@
                 </tbody>
               </table>
             </div>
-          </div>
+          </div>   
           <div class="tab-pane fade" id="Admin_Torre-III-IV" role="tabpanel" aria-labelledby="Admin_Torre-III-IV-tab">
             <div class="table responsive">
               <table class="table table-striped">
@@ -190,55 +194,55 @@
                     <td>5$</td>
                   </tr>                    
                   <tr>
-                    <td>T1-PB-B</td>
+                    <td>T3-PB-B</td>
                     <td>20$</td>
                     <td>5$</td>
                     <td>15$</td>
                   </tr>
                   <tr>
-                    <td>T1-PB-C</td>
+                    <td>T3-PB-C</td>
                     <td>10$</td>
                     <td>0$</td>
                     <td>0$</td>
                   </tr>
                   <tr>
-                    <td>T1-PB-D</td>
+                    <td>T3-PB-D</td>
                     <td>0$</td>
                     <td>0$</td>
                     <td>0$</td>
                   </tr>
                   <tr>
-                    <td>T1-P1-A</td>
+                    <td>T3-P1-A</td>
                     <td>0$</td>
                     <td>50$</td>
                     <td>100$</td>
                   </tr>
                   <tr>
-                    <td>T1-P1-B</td>
+                    <td>T3-P1-B</td>
                     <td>50$</td>
                     <td>0$</td>
                     <td>0$</td>
                   </tr>
                   <tr>
-                    <td>T1-P1-C</td>
+                    <td>T3-P1-C</td>
                     <td>10$</td>
                     <td>15$</td>
                     <td>10$</td>
                   </tr>
                   <tr>
-                    <td>T1-P1-D</td>
+                    <td>T3-P1-D</td>
                     <td>20$</td>
                     <td>0$</td>
                     <td>0$</td>
                   </tr>
                   <tr>
-                    <td>T1-P2-A</td>
+                    <td>T3-P2-A</td>
                     <td>0$</td>
                     <td>0$</td>
                     <td>0$</td>
                   </tr>
                   <tr>
-                    <td>T1-P2-B</td>
+                    <td>T3-P2-B</td>
                     <td>0$</td>
                     <td>0$</td>
                     <td>0$</td>
@@ -392,8 +396,63 @@
                 </tbody>
               </table>
             </div>
-          </div> 
-        </div>
+          </div>
+          <div class="tab-pane fade" id="Formas_de_Pago" role="tabpanel" aria-labelledby="Formas_de_Pago-tab">
+            <div class="accordion" id="accordion-formas-de-pago">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-efectivo" aria-expanded="true" aria-controls="collapse-efectivo">Efectivo
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-efectivo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-formas-de-pago">
+                  <div class="card-body text-justify">
+                    <div class="row">
+                      <strong>Puedes cancelar tus deudas pagando con Bolívares Soberanos o Dolares Estadounidenses.</strong>
+                    </div>
+                    <div class="row">
+                    Para ambas divisas existen ciertas condiciones que aplican:
+                    </div>
+                    <div class="row">
+                    -Los billetes debe estar en buen estado (Bs/$).
+                    </div>
+                    <div class="row">
+                    -Para pagos en Bolívares sólo se aceptan billetes de nominación 100.000 Bs.
+                    </div>
+                    <div class="row">
+                    -Para pagos en Dolares se tomará registro de los seriales del billete.
+                    </div>
+                  </div>
+                </div>   
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-transferencias" aria-expanded="true" aria-controls="collapse-transferencias">Transferencias
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-transferencias" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-formas-de-pago">
+                  <div class="card-body text-justify">
+                    <div class="row">
+                      <strong>Puedes cancelar tus deudas por medio de pago electrónico:</strong>
+                    </div>
+                    <div class="row">
+                      -Banco Exterior Cta Corriente: 0145-12345678901234 (Sólo Bolívares Soberanos).
+                    </div>
+                    <div class="row">
+                      -Bank of America (Zelle) nestorxyz@gmail.com (sólo Dolares Estadounidenses).
+                    </div>
+                    <div class="row">
+                      -Pago Móvil desde otros Bancos Nacionales (Previo acuerdo con el administrador).
+                    </div>
+                  </div>
+                </div>   
+              </div>
+            </div>   
+          </div>
+        </div> 
       </div>
     </div>
     <footer>

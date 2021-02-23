@@ -50,3 +50,12 @@ form {
 .card-btn {
 	padding-bottom: 10px;
 }
+
+.tab-content {
+	padding-top: 10px;
+}
+
+.padding-card{
+	padding-right:50px; 
+	padding-left:50px;
+}
