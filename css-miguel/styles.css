@@ -1,0 +1,53 @@
+.jumbotron {
+  background-color: #f28d2e;
+  color: black;
+  height: 300px; }
+
+footer {
+  padding: 30px 10px 0px 30px;
+  background-color: #f28d2e;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.fondo-header-card {
+  background-color: #383432; }
+
+.fondo-carousel {
+  background-color: #000000; }
+
+.footer-icon {
+  padding-right: 10px; }
+
+.body-icon {
+  padding-right: 15px; }
+
+.padding-titulo {
+  padding-bottom: 30px;
+  padding-top: 50px; }
+
+.padd_btn_contact {
+  padding-bottom: 20px; }
+
+form {
+  padding-bottom: 15px; }
+
+.body-icon-estadist {
+  padding-left: 15px; }
+
+.card-admin {
+  border-radius: 5px; }
+
+.btn-config {
+  width: 70%;
+  border-radius: 20px; }
+
+.card-btn {
+  padding-bottom: 10px; }
+
+.tab-content {
+  padding-top: 10px; }
+
+.padding-card {
+  padding-right: 50px;
+  padding-left: 50px; }

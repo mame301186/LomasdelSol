@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":"node-sass css-miguel/ -o css-miguel/"
   },
   "repository": {
     "type": "git",
@@ -15,7 +16,8 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/mame301186/portal-pagos#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "node-sass": "^5.0.0"
   },
   "dependencies": {
     "bootstrap": "^4.6.0",

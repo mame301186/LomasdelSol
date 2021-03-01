@@ -1,15 +1,22 @@
 .jumbotron {
-    background-color: orange;
+    background-color:$naranja;
     color: black; 
-    height: 300px
+    height: 300px;
 }
 
 footer {
 	padding: 30px 10px 0px 30px;
-	background-color: orange;
+	background-color: $naranja;
 	color: black;
-	margin-bottom: 0px;
-	margin-top:10px;
+	@include margenes (10px,0px);
+}
+
+.fondo-header-card{
+	background-color:$gris;
+}
+
+.fondo-carousel{
+	background-color:$negro;
 }
 
 .footer-icon {
@@ -56,6 +63,5 @@ form {
 }
 
 .padding-card{
-	padding-right:50px; 
-	padding-left:50px;
+	@include espaciamiento(50px,50px);
 }
