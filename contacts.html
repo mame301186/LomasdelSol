@@ -9,16 +9,17 @@
 
     <!-- Bootstrap CSS -->
     <!-- build:css css/index.css-->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css-miguel/styles.css">
-    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/librerias_css/bootstrap.min.css">
+    <link rel="stylesheet" href="/librerias_css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="/css-miguel/styles.css">
+    <link rel="stylesheet" href="/font/css/open-iconic-bootstrap.css" rel="stylesheet">
     <!-- endbuild -->
 
     <title>CONJUNTO RESIDENCIAL LOMAS DEL SOL</title>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="#">LOMAS DEL SOL</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria label="toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,16 +27,11 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="./proyect.html">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="./economics-index.html">Indicadores Económicos</a></li>
-          <li class="nav-item"><a class="nav-link" href="./estadisticas.html">Estadísticas</a></li>
-          <li class="nav-item"><a class="nav-link" href="./term-and-conditions.html">Términos y condiciones</a></li>
           <li class="nav-item active"><a class="nav-link" href="#">Contacto</a></li>
         </ul>
     </nav>
 
-    <div class="jumbotron">
+    <div class="jumbotron-sm text-center bg-warning">
       <figure class="text-center">
         <img src="images/icono_nuevo_lomas.png" class="img-fluid img-jumbotron" alt="Condominio Lomas del Sol" width="120">
         <h1>CONJUNTO RESIDENCIAL LOMAS DEL SOL</h1>
@@ -52,35 +48,35 @@
         </ol>
       </nav>
       <h1>Formula tu comentario</h1>
-      <form>
+      <form action="enviar-contacto.php" method="post">
         <div class="form-row">
           <div class="form-group col-sm-6">
             <label for="nombre">Nombre completo</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingrese sus nombres">
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese sus nombres" required="required">
           </div>
           <div class="form-group col-sm-6">
             <label for="apellido">Apellido completo</label>
-            <input type="text" class="form-control" id="apellido" placeholder="Ingrese sus apellidos">
+            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese sus apellidos" required="required">
           </div>
           <div class="form-group col-sm-4">
             <label for="cod_pais">Código de país</label>
-            <input type="tel" class="form-control" id="cod_pais" placeholder="Ejemplo: Venezuela (58)">
+            <input type="tel" class="form-control" id="cod_pais" name="cod_pais" placeholder="Ejemplo: Venezuela (58)" required="required">
           </div>
           <div class="form-group col-sm-4">
             <label for="cod_oper">Código de operadora</label>
-            <input type="tel" class="form-control" id="cod_oper" placeholder="Ejemplo: Movistar (424)">
+            <input type="tel" class="form-control" id="cod_oper" name="cod_oper" placeholder="Ejemplo: Movistar (424)" required="required">
           </div>
           <div class="form-group col-sm-4">
             <label for="telefono">Número telefónico</label>
-            <input type="tel" class="form-control" id="telefono" placeholder="No utilice separadores (7 digitos)">
+            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="No utilice separadores (7 digitos)" required="required">
           </div>
           <div class="form-group col-sm-3">
             <label for="correo">Correo electrónico</label>
-            <input type="email" class="form-control" id="correo" placeholder="example@gmail.com">
+            <input type="email" class="form-control" id="correo" name="correo" placeholder="example@gmail.com" required="required">
           </div>
           <div class="form-group col-sm-3">
             <label for="tipo_visitante">Condición del visitante</label>
-            <select class="form-control" id="tipo_visitante">
+            <select class="form-control" id="tipo_visitante" name="tipo_visitante" required="required">
               <option>Propietario</option>
               <option>Inquilino</option>
               <option>Persona externa</option>
@@ -88,7 +84,7 @@
           </div>
           <div class="form-group col-sm-3">
             <label for="torre">Torre</label>  
-            <select class="form-control" id="torre">
+            <select class="form-control" id="torre" name="torre" required="required">
               <option>Torre I</option>
               <option>Torre II</option>
               <option>Torre III</option>
@@ -100,7 +96,7 @@
           </div>
           <div class="form-group col-sm-3">
             <label for="Apto">Apartamento</label>  
-            <select class="form-control" id="apto">
+            <select class="form-control" id="apto" name="apto" required="required">
               <option>PB-A</option>
               <option>PB-B</option>
               <option>PB-C</option>
@@ -123,42 +119,25 @@
         </div>
           <div class="form-group">
             <label for="comentario">Comentario</label> 
-            <textarea id="comentario" class="form-control" rows="5" placeholder="Escribe tu comentario aquí"></textarea>
+            <textarea id="comentario" name="comentario" class="form-control" rows="5" placeholder="Escribe tu comentario aquí" required="required"></textarea>
           </div>
           <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="check-box">
-            <label for="check-box" class="form-check-label padd_btn_contact">Deseo una respuesta a mi comentario</label>
+            <input type="checkbox" class="form-check-input" id="check-box" required="required">
+            <label for="check-box" class="form-check-label padd_btn_contact">Confirmar</label>
           </div>
           <button type="submit" class="btn btn-primary">Enviar formulario</button>
         </div>
       </form>
     </div>  
-    <footer>
-    	<div class="row">
-    		<div class="col d-flex flex-column">
-    			<p class="h4"><span class="oi oi-people footer-icon"></span>Redes Sociales</p>
-    			<a href="http://www.facebook.com">Facebook</a>
-    	    <a href="http://www.twitter.com">Twitter</a>
-    	    <a href="http://www.instagram.com">Instagram</a>
-    	    <a href="http://www.google.com">Google+</a>
-    		</div>
-    	  <div class="col">
-    			<addres>
-            <p class="h4"><span class="oi oi-home footer-icon"></span>Dirección</p>
-            <p>Calle 80, sector La Macandona, parroquia Raúl Leoni, Maracaibo, Venezuela.</p>
-            <p class="h4"><span class="oi oi-phone footer-icon"></span>Teléfonos</p>
-            <p>+58-(412)1676760</p>
-            <p class="h4"><span class="oi oi-envelope-closed footer-icon"></span>Correo electrónico</p>
-            <p>lomasdelsol@gmail.com</p>
-          </addres>
-    		</div>
-    		<div class="col d-flex flex-column align-items-center">
-          <h4>Reconócenos en la web</h4>
-          <img src="images/icono_nuevo_lomas.png" class="img-fluid" alt="Condominio Lomas del Sol" width="100">
-          <p class="h4">Nosotros</p>
-          <p class="h4">Términos y condiciones</p>
-        </div>  
-      </div>	    
+    <footer class="bg-warning py-1 my-0">
+    	<div class="container-fluid text-center container-sm">
+          <p class="h4"><span class="oi oi-home footer-icon"></span>Dirección</p>
+          <p>Calle 80, entre Av. 12 y 11, Sector La Macandona, Parroquia Raúl Leoni, Maracaibo, Venezuela. Estamos ubicados al lado del Conjunto Residencial las Tunas</p>
+          <p class="h4"><span class="oi oi-phone footer-icon"></span>Teléfonos</p>
+          <p>+58-(412)1676760</p>
+          <p class="h4"><span class="oi oi-envelope-closed footer-icon"></span>Correo electrónico</p>
+          <p>lomasdelsol@gmail.com</p>
+      </div>  
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -166,9 +145,9 @@
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!-- build:js js/main.js-->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="librerias_js/jquery.min.js"></script>
+    <script src="librerias_js/popper.min.js"></script>    
+    <script src="librerias_js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
     <!-- endbuild -->
   </body>
