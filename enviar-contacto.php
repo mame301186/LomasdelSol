@@ -26,7 +26,7 @@ $mensaje .= "Mensaje: " . $comentario . " \n";
 $mensaje = "Enviado el " . date('d/m/y' , time ());
 
 //Mensaje o Carta
-mail($destinatario, $asunto, $mensaje, utf8_decode($mensaje), $header);
+mail($destinatario, $asunto, $mensaje, utf8_decode($mensaje));
 
 header("Location: index.html");
 ?>
