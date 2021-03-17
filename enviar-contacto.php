@@ -1,4 +1,4 @@
-<? php
+<?php
 //Llamando a los campos
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
@@ -13,12 +13,15 @@ $comentario = $_POST['comentario'];
 
 //Datos para el correo
     //Mensaje o Carta
-$destinatario = 'condominiolomasdelsolt34@gmail.com';
+$destinatario = 'marquezm1986@gmail.com';
 $asunto = 'Contacto desde nuestra web';
 
-$mensaje = "Este mensaje fue enviado por: " . $nombre . $apellido  " \n";
+$mensaje = "Nombre de remitente: " . $nombre .  " \n";
+$mensaje = "Apellido de remitente: " . $apellido .  " \n";
 $mensaje .= "Su e-mail es: " . $correo . " \n";
-$mensaje .= "Su telefono es: " . $cod_pais . $cod_oper . $telefono . " \n";
+$mensaje .= "Código de país: " . $cod_pais . " \n";
+$mensaje .= "Código de operadora: " . $cod_oper . " \n";
+$mensaje .= "Número telefónico: " . $telefono . " \n";
 $mensaje .= "Tipo de visitante: " . $tipo_visitante . " \n";
 $mensaje .= "Torre: " . $torre . " \n";
 $mensaje .= "apto: " . $apto . " \n";
