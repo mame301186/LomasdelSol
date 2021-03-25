@@ -13,7 +13,7 @@
     "watch:scss": "onchange 'css-miguel/*.scss' -- npm run scss",
     "clean": "rimraf dist",
     "imagemin": "imagemin images/* --out-dir dist/images",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin proyect.html -d dist --htmlmin -o dist/proyect.html && usemin economics-index.html -d dist --htmlmin -o dist/economics-index.html && usemin estadisticas.html -d dist --htmlmin -o dist/estadisticas.html && usemin term-and-conditions.html -d dist --htmlmin -o dist/term-and-conditions.html && usemin contacts.html -d dist --htmlmin -o dist/contacts.html",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run less && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
